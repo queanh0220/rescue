@@ -1,4 +1,4 @@
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,6 +17,29 @@ img {
     display: block;
 }
 
+/* mobile viewport */
+
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+.mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+.mobile h1 {
+    font-family: 'Emblema One', sans-serif;
+}
+
+.mobile h3 {
+    font-family: 'Lora', sans-serif;
+}
+
 header img {
     width: 100%;
 }
@@ -32,10 +55,12 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
+    border-top: 0.5px solid;
+    color: #f6eee4;
 }
 
 nav li a {
@@ -45,7 +70,9 @@ nav li a {
     text-decoration: none;
 }
 
-main {
+/* main */
+
+/* main {
     padding: 2%;
     font-family: Verdana, Arial, sans-serif;
 }
@@ -57,13 +84,13 @@ main p {
 
 main ul {
     list-style-type: square;
-}
+} */
 
 #info img {
     width: 50%;
 }
 
-.link {
+/* .link {
     color: #4d3319;
     text-decoration: none;
     font-weight: bold;
@@ -74,10 +101,64 @@ main ul {
     font-size: 1.75;
     font-weight: bold;
     text-align: center;
+} */
+
+/* main mobile  */
+main {
+    padding: 2%;
+    font-family: 'Lora', sans-serif;
 }
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+/* contact */
 
 #contact {
     text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
