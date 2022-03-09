@@ -272,6 +272,15 @@ footer a {
     main {
         background-color: #f6eee4;
     }
+
+    .grid {
+        grid-template-columns: 4;
+    }
+
+    aside {
+        grid-column: 1 /span 4;
+        font-size: 3em;
+    }
 }
 
 @media print {
