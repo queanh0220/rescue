@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild Rescues: Template</title>
+    <title>Wild Rescues: FAQs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Francois+One&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,6 +17,20 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="partnership.html">Partnership</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+            </a>
+        </nav>
         <header>
             <img src="./img/hawk.jpg" alt="rescued hawk." class="tab-desk">
             <div class="mobile">
@@ -25,7 +39,7 @@
             </div>
         </header>
     
-        <nav>
+        <nav class="tab-desk">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -37,6 +51,19 @@
         </nav>
     
         <main>
+            <div class="questions">
+                <p onclick="ans1()">How can I determine if a baby animal is an
+                    orphan?</p>
+                    <p onclick="ans2()">How can I tell if an animal has rabies?</p>
+                    <p onclick="ans3()">I found a baby bird that fell from its nest. Will
+                the parents orphan it if I touch it?</p>
+                    <p onclick="ans4()">How can I volunteer?</p>
+            </div>
+            <div class="answer">
+                <h2>Answer:</h2>
+                <p></p>
+
+            </div>
     
         </main>
     
@@ -45,5 +72,8 @@
             <p><a href="mailto:contact@willdrescues.net"></a>contact@willdrescues.net</p>
         </footer>
     </div>
+
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
